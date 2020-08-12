@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./fotos/favicon.png">
+    <title>Carros</title>
+</head>
+<body>
+    <div id="sequence" class="seq">
+        <ul class="seq-canvas">
+            
+            <li class="step1 valign seq-in">
+                <div class="vcenter">
+                    <img data-seq class="feature" src="./fotos/kwid.png" width="389" height="300"/>
+                    <h2 data-seq class="title">Renault Kwid</h2>
+                </div>
+            </li>
+
+            <li class="step2 valign">
+                <div class="vcenter">
+                    <img data-seq class="feature" src="./fotos/sandero.png" width="325" height="300"/>
+                    <h2 data-seq class="title">Renault Sandero</h2>
+                </div>
+            </li>
+
+            <li class="step3 valign">
+                <div class="vcenter">
+                    <img data-seq class="feature" src="./fotos/renault-oroch.png" width="325" height="300"/>
+                    <h2 data-seq class="title">Renault Oroch</h2>
+                </div>
+            </li>
+
+            <li class="step4 valign">
+              <div class="vcenter">
+                  <img data-seq class="feature" src="./fotos/clio.png" width="325" height="300"/>
+                  <h2 data-seq class="title">Renault Clio</h2>
+              </div>
+            </li>
+            <li class="step5 valign">
+              <div class="vcenter">
+                  <img data-seq class="feature" src="./fotos/captur.png" width="325" height="300"/>
+                  <h2 data-seq class="title">Renault Captur</h2>
+              </div>
+            </li>
+            <li class="step6 valign">
+              <div class="vcenter">
+                  <img data-seq class="feature" src="./fotos/talisman.png" width="325" height="300"/>
+                  <h2 data-seq class="title">Renault Talisman</h2>
+              </div>
+            </li>
+            <li class="step7 valign">
+              <div class="vcenter">
+                  <img data-seq class="feature" src="./fotos/koleos.png" width="325" height="300"/>
+                  <h2 data-seq class="title">Renault Koleos</h2>
+              </div>
+            </li>
+        </ul>
+
+        <fieldset class="nav" aria-label="Slider buttons" aria-controls="sequence">
+        
+            <button type="button" class="seq-prev" aria-label="Previous"><img src="prev.svg" alt="Previous" /></button>
+
+            <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+              <li class="seq-current">
+                <a href="#step1" rel="step1" title="Go to bananas">
+                  <img src="./fotos/kwid.png" alt="Bananas" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step2" rel="step2" title="Go to coconut">
+                  <img src="./fotos/sandero.png" alt="Coconut" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step3" rel="step3" title="Go to orange">
+                  <img src="./fotos/renault-oroch.png" alt="Orange" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step4" rel="step4" title="Go to orange">
+                  <img src="./fotos/clio.png" alt="Orange" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step5" rel="step5" title="Go to orange">
+                  <img src="./fotos/captur.png" alt="Orange" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step6" rel="step6" title="Go to orange">
+                  <img src="./fotos/talisman.png" alt="Orange" width="50" height="40" />
+                </a>
+              </li>
+              <li>
+                <a href="#step7" rel="step7" title="Go to orange">
+                  <img src="./fotos/koleos.png" alt="Orange" width="50" height="40" />
+                </a>
+              </li>
+            </ul>
+
+        <button type="button" class="seq-next" aria-label="Next"><img src="next.svg" alt="Next" /></button>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/sequence.min.2.1.0.js"></script>
+
+    <script>
+        var sequenceElement = document.getElementById("sequence");
+        
+        var options={
+            keyNavigation: true,
+            animateCanvas: false,
+            phaseThreshold:false,
+            reverseWhenNavigatingBackwards:true
+        }
+
+        var mySequence = sequence(sequenceElement, options);
+
+    </script>
+</body>
+</html>
